@@ -136,7 +136,6 @@ FORMS += \
 # polyclipping
 !contains(UNBUNDLE, polyclipping) {
     LIBS += -lpolyclipping
-    INCLUDEPATH += ../../libs/polyclipping
     DEPENDPATH += ../../libs/polyclipping
 }
 
