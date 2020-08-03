@@ -22,7 +22,7 @@ jobs:
         IMAGE: librepcb/librepcb-dev:ubuntu-20.04-2
       Ubuntu_2004_Unbundled:
         IMAGE: dbrgn/librepcb-dev:ubuntu-20.04-2
-        UNBUNDLE: quazip polyclipping
+        UNBUNDLE: "quazip polyclipping"
         LD_LIBRARY_PATH: $(Build.Repository.LocalPath)/build/install/opt/lib
   container: $[ variables['IMAGE'] ]
   steps:
